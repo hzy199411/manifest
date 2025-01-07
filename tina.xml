@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="../T527_Tina5.0_AIOT/tina" name="tina"/>
+  <default remote="tina" revision="product-t527-linux" sync-j="4"/>
+  <project groups="tina" name="ai-sdk" path="platform/allwinner/vision/ai-sdk"/>
+  <project groups="tina" name="kunos/platform/config" path="buildroot/config"/>
+  <project name="lichee/arisc" path="brandy/arisc"/>
+  <project name="lichee/brandy-2.0/opensbi" path="brandy/brandy-2.0/opensbi"/>
+  <project name="lichee/brandy-2.0/spl-pub" path="brandy/brandy-2.0/spl-pub"/>
+  <project name="lichee/brandy-2.0/tools" path="brandy/brandy-2.0/tools">
+    <linkfile dest="brandy/brandy-2.0/build.sh" src="build.sh"/>
+  </project>
+  <project name="lichee/brandy-2.0/u-boot-2018" path="brandy/brandy-2.0/u-boot-2018"/>
+  <project name="lichee/bsp" path="bsp"/>
+  <project name="lichee/build" path="build">
+    <linkfile dest="build.sh" src="top_build.sh"/>
+  </project>
+  <project name="lichee/debian" path="debian"/>
+  <project name="lichee/device/config/a523" path="device/config/chips/a523"/>
+  <project name="lichee/device/config/a527" path="device/config/chips/a527"/>
+  <project name="lichee/device/config/common" path="device/config/common"/>
+  <project name="lichee/device/config/rootfs_tar" path="device/config/rootfs_tar"/>
+  <project name="lichee/device/config/t527" path="device/config/chips/t527"/>
+  <project name="lichee/dragonboard" path="test/dragonboard"/>
+  <project name="lichee/dramlib" path="brandy/dramlib"/>
+  <project name="lichee/freertos" path="rtos/lichee/dsp"/>
+  <project name="lichee/kernel_patches" path="platform/allwinner/kernel_patches"/>
+  <project name="lichee/linux-5.10" path="kernel/linux-5.10"/>
+  <project name="lichee/linux-5.15" path="kernel/linux-5.15"/>
+  <project name="lichee/tools" path="tools"/>
+  <project groups="tina" name="media/cedarc-release/libcedarc" path="platform/allwinner/multimedia/libcedarc"/>
+  <project name="media/cedare" path="platform/allwinner/multimedia/libcedare"/>
+  <project groups="tina" name="media/cedarx" path="platform/allwinner/multimedia/libcedarx"/>
+  <project name="platform/framework/display" path="platform/allwinner/display/pqd"/>
+  <project name="product/docs" path="docs"/>
+  <project name="product/linux/external/adbd" path="platform/allwinner/usb/adbd"/>
+  <project name="product/linux/external/amp_shell" path="platform/allwinner/system/amp_shell"/>
+  <project name="product/linux/external/boot-play" path="platform/allwinner/utils/boot-play"/>
+  <project name="product/linux/external/btmanager" path="platform/allwinner/wireless/btmanager"/>
+  <project name="product/linux/external/cpu_monitor" path="platform/allwinner/utils/cpu_monitor"/>
+  <project name="product/linux/external/drm" path="platform/allwinner/display/drm"/>
+  <project name="product/linux/external/g2d" path="platform/allwinner/display/g2d"/>
+  <project name="product/linux/external/healthd" path="platform/allwinner/power/healthd"/>
+  <project name="product/linux/external/libAWIspApi" path="platform/allwinner/vision/libAWIspApi"/>
+  <project name="product/linux/external/libawion" path="platform/allwinner/common/libawion"/>
+  <project name="product/linux/external/libbase" path="platform/allwinner/libbase"/>
+  <project name="product/linux/external/libcedarse" path="platform/allwinner/multimedia/libcedarse"/>
+  <project name="product/linux/external/libcutils" path="platform/thirdparty/libs/libcutils"/>
+  <project name="product/linux/external/libgpu" path="platform/allwinner/display/libgpu"/>
+  <project name="product/linux/external/librpmsg" path="platform/allwinner/system/rpmsg"/>
+  <project name="product/linux/external/libsocket_db" path="platform/allwinner/utils/libsocket_db"/>
+  <project name="product/linux/external/libuapi" path="platform/allwinner/display/libuapi"/>
+  <project name="product/linux/external/littlevgl-8" path="platform/thirdparty/gui/lvgl-8"/>
+  <project name="product/linux/external/mtop" path="platform/allwinner/utils/mtop"/>
+  <project name="product/linux/external/mtp" path="platform/allwinner/usb/mtp"/>
+  <project name="product/linux/external/multimedia" path="platform/allwinner/multimedia/libtmedia"/>
+  <project name="product/linux/external/multimedia_demo" path="platform/allwinner/multimedia/multimedia_demo"/>
+  <project name="product/linux/external/ota-burnboot" path="platform/allwinner/system/ota-burnboot"/>
+  <project name="product/linux/external/powerkey" path="platform/allwinner/power/powerkey"/>
+  <project name="product/linux/external/ramparser" path="platform/allwinner/utils/ramparser"/>
+  <project name="product/linux/external/rpbuf" path="platform/allwinner/system/rpbuf"/>
+  <project name="product/linux/external/rtk_hciattach" path="platform/thirdparty/wireless/rtk_hciattach"/>
+  <project name="product/linux/external/setusbconfig" path="platform/allwinner/usb/setusbconfig"/>
+  <project name="product/linux/external/uevent-monitor" path="platform/allwinner/utils/uevent-monitor"/>
+  <project name="product/linux/external/wifimanager" path="platform/allwinner/wireless/wifimanager"/>
+  <project name="product/linux/external/wireless_common" path="platform/allwinner/wireless/common"/>
+  <project name="product/linux/external/wireless_firmware" path="platform/allwinner/wireless/firmware"/>
+  <project name="product/rtos-components" path="rtos/lichee/rtos-components"/>
+  <project name="product/rtos/device/chips/t527_e906" path="rtos/board/t527_e906"/>
+  <project name="product/tina/rtos-hal" path="rtos/lichee/rtos-hal"/>
+  <project name="product/tina/rtos-tools" path="rtos/tools">
+    <linkfile dest="rtos/envsetup.sh" src="scripts/source_envsetup.sh"/>
+  </project>
+  <project groups="tina" name="product/tina/tina-ng/buildroot-202205" path="buildroot/buildroot-202205"/>
+  <project groups="tina" name="product/tina/tina-ng/package/allwinner/auto" path="buildroot/package/allwinner/auto"/>
+  <project groups="tina" name="product/tina/tina-ng/package/allwinner/tina_multimedia" path="buildroot/package/allwinner/multimedia/tina_multimedia"/>
+  <project groups="tina" name="product/tina/tina-ng/package/allwinner/tina_multimedia_demo" path="buildroot/package/allwinner/multimedia/tina_multimedia_demo"/>
+  <project name="product/tina/tina-ng/prebuilt/aarch64" path="prebuilt/rootfsbuilt/aarch64"/>
+  <project groups="tina" name="product/tina/tina-ng/prebuilt/hostbuilt" path="prebuilt/hostbuilt"/>
+  <project name="product/tina/tina-ng/prebuilt/kernel-built/aarch64" path="prebuilt/kernelbuilt/aarch64"/>
+  <project name="product/tina/tina-ng/prebuilt/kernel-built/arm" path="prebuilt/kernelbuilt/arm"/>
+  <project name="product/tina/tina-ng/prebuilt/kernel-built/riscv" path="prebuilt/kernelbuilt/riscv"/>
+  <project groups="tina" name="product/tina/tina-ng/prebuilt/riscv" path="prebuilt/rootfsbuilt/riscv"/>
+  <project name="product/tina/tina-ng/target/a523" path="target/a523"/>
+  <project name="product/tina/tina-ng/target/a527" path="target/a527"/>
+  <project name="product/tina/tina-ng/target/common" path="target/common"/>
+  <project name="product/tina/tina-ng/target/t527" path="target/t527"/>
+  <project name="product/tina/tina-rt" path="rtos/lichee/rtos"/>
+  <project name="t-coffer/tee_kit" path="tee_kit"/>
+</manifest>
