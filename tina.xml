@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="../T527_Tina5.0_AIOT/tina" name="tina"/>
+  <remote fetch="https://github.com/radxa" name="radxa"/>
   <default remote="tina" revision="product-t527-linux" sync-j="4"/>
   <project groups="tina" name="ai-sdk" path="platform/allwinner/vision/ai-sdk"/>
   <project groups="tina" name="kunos/platform/config" path="buildroot/config"/>
@@ -10,14 +11,14 @@
   <project name="lichee/brandy-2.0/tools" path="brandy/brandy-2.0/tools">
     <linkfile dest="brandy/brandy-2.0/build.sh" src="build.sh"/>
   </project>
-  <project name="lichee/brandy-2.0/u-boot-2018" path="brandy/brandy-2.0/u-boot-2018"/>
-  <project name="lichee/bsp" path="bsp"/>
+  <project remote="radxa" name="u-boot" path="brandy/brandy-2.0/u-boot-2018" revision="allwinner-aiot-v2018.07"/>
+  <project remote="radxa" name="allwinner-bsp" path="bsp"/>
   <project name="lichee/build" path="build">
     <linkfile dest="build.sh" src="top_build.sh"/>
   </project>
   <project name="lichee/debian" path="debian"/>
   <project name="lichee/device/config/a523" path="device/config/chips/a523"/>
-  <project name="lichee/device/config/a527" path="device/config/chips/a527"/>
+  <project remote="radxa" name="allwinner-device" path="device/config/chips/a527" revision="device-a527"/>
   <project name="lichee/device/config/common" path="device/config/common"/>
   <project name="lichee/device/config/rootfs_tar" path="device/config/rootfs_tar"/>
   <project name="lichee/device/config/t527" path="device/config/chips/t527"/>
@@ -26,7 +27,7 @@
   <project name="lichee/freertos" path="rtos/lichee/dsp"/>
   <project name="lichee/kernel_patches" path="platform/allwinner/kernel_patches"/>
   <project name="lichee/linux-5.10" path="kernel/linux-5.10"/>
-  <project name="lichee/linux-5.15" path="kernel/linux-5.15"/>
+  <project remote="radxa" name="kernel" path="kernel/linux-5.15" revision="allwinner-aiot-linux-5.15"/>
   <project name="lichee/tools" path="tools"/>
   <project groups="tina" name="media/cedarc-release/libcedarc" path="platform/allwinner/multimedia/libcedarc"/>
   <project name="media/cedare" path="platform/allwinner/multimedia/libcedare"/>
@@ -82,7 +83,7 @@
   <project name="product/tina/tina-ng/prebuilt/kernel-built/riscv" path="prebuilt/kernelbuilt/riscv"/>
   <project groups="tina" name="product/tina/tina-ng/prebuilt/riscv" path="prebuilt/rootfsbuilt/riscv"/>
   <project name="product/tina/tina-ng/target/a523" path="target/a523"/>
-  <project name="product/tina/tina-ng/target/a527" path="target/a527"/>
+  <project remote="radxa" name="allwinner-target" path="target/a527" revision="target-a527"/>
   <project name="product/tina/tina-ng/target/common" path="target/common"/>
   <project name="product/tina/tina-ng/target/t527" path="target/t527"/>
   <project name="product/tina/tina-rt" path="rtos/lichee/rtos"/>
