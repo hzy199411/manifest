@@ -43,7 +43,6 @@
   <project dest-branch="sunxi-dev" name="product/linux/external/cpu_monitor" path="platform/allwinner/utils/cpu_monitor" upstream="sunxi-dev"/>
   <project dest-branch="sunxi-dev" name="product/linux/external/drm" path="platform/allwinner/display/drm" upstream="sunxi-dev"/>
   <project dest-branch="sunxi-dev" name="product/linux/external/g2d-sample" path="platform/allwinner/display/g2d-sample" upstream="sunxi-dev"/>
-  <project dest-branch="tina-dev" name="product/linux/external/gpu_demo" path="platform/allwinner/display/gpu_demo" upstream="tina-dev"/>
   <project dest-branch="sunxi-dev" name="product/linux/external/healthd" path="platform/allwinner/power/healthd" upstream="sunxi-dev"/>
   <project dest-branch="sunxi-dev" name="product/linux/external/libAWIspApi" path="platform/allwinner/vision/libAWIspApi" upstream="sunxi-dev"/>
   <project dest-branch="sunxi-dev" name="product/linux/external/libawion" path="platform/allwinner/common/libawion" upstream="sunxi-dev"/>
