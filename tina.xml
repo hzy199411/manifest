@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="../Tina_AIOT/tina" name="tina"/>
+  <remote fetch="https://github.com/radxa" name="radxa"/>
   <default remote="tina" revision="product-aiot-stable" sync-j="4"/>
   <project dest-branch="ai-dev" groups="tina" name="ai-sdk" path="platform/allwinner/vision/ai-sdk" upstream="ai-dev"/>
   <project dest-branch="tina-dev" groups="tina" name="kunos/platform/config" path="buildroot/config" upstream="tina-dev"/>
@@ -10,15 +11,15 @@
   <project dest-branch="sunxi-dev" name="lichee/brandy-2.0/tools" path="brandy/brandy-2.0/tools" upstream="sunxi-dev">
     <linkfile dest="brandy/brandy-2.0/build.sh" src="build.sh"/>
   </project>
-  <project dest-branch="product-aiot-stable" name="lichee/brandy-2.0/u-boot-2018" path="brandy/brandy-2.0/u-boot-2018" upstream="product-aiot-stable"/>
-  <project dest-branch="product-aiot-stable" name="lichee/bsp" path="bsp" upstream="product-aiot-stable"/>
+  <project remote="radxa" name="u-boot" path="brandy/brandy-2.0/u-boot-2018" revision="cubie-aiot-v1.4.6"/>
+  <project remote="radxa" name="allwinner-bsp" path="bsp" revision="cubie-aiot-v1.4.6"/>
   <project dest-branch="product-aiot-stable" name="lichee/build" path="build" upstream="product-aiot-stable">
     <linkfile dest="build.sh" src="top_build.sh"/>
   </project>
   <project dest-branch="master" name="lichee/debian" path="debian" upstream="master"/>
   <project dest-branch="product-aiot-stable" name="lichee/device/config/a523" path="device/config/chips/a523" upstream="product-aiot-stable"/>
   <project dest-branch="product-aiot-stable" name="lichee/device/config/a527" path="device/config/chips/a527" upstream="product-aiot-stable"/>
-  <project dest-branch="product-aiot-stable" name="lichee/device/config/a733" path="device/config/chips/a733" upstream="product-aiot-stable"/>
+  <project remote="radxa" name="allwinner-device" path="device/config/chips/a733" revision="device-a733-v1.4.6"/>
   <project dest-branch="product-aiot-stable" name="lichee/device/config/common" path="device/config/common" upstream="product-aiot-stable"/>
   <project dest-branch="product-aiot-stable" name="lichee/device/config/rootfs_tar" path="device/config/rootfs_tar" upstream="product-aiot-stable"/>
   <project dest-branch="product-aiot-stable" name="lichee/device/config/t527" path="device/config/chips/t527" upstream="product-aiot-stable"/>
@@ -28,7 +29,7 @@
   <project dest-branch="sunxi-dev" name="lichee/dsp" path="rtos/lichee/dsp" upstream="sunxi-dev"/>
   <project dest-branch="sunxi-dev" name="lichee/kernel_patches" path="platform/allwinner/kernel_patches" upstream="sunxi-dev"/>
   <project dest-branch="sunxi-dev-origin" name="lichee/linux-5.10" path="kernel/linux-5.10" upstream="sunxi-dev-origin"/>
-  <project dest-branch="sunxi-dev-origin" name="lichee/linux-5.15" path="kernel/linux-5.15" upstream="sunxi-dev-origin"/>
+  <project remote="radxa" name="kernel" path="kernel/linux-5.15" revision="allwinner-aiot-linux-5.15"/>
   <project dest-branch="sunxi-dev" name="lichee/tools" path="tools" upstream="sunxi-dev"/>
   <project dest-branch="stable_v1.3.0_common" groups="tina" name="media/cedarc-release/libcedarc" path="platform/allwinner/multimedia/libcedarc" upstream="stable_v1.3.0_common"/>
   <project dest-branch="stable_v2.0.0_common" groups="tina" name="media/cedarc-release/libcedarc_v2.0" path="platform/allwinner/multimedia/libcedarc_v2.0" upstream="stable_v2.0.0_common"/>
@@ -87,7 +88,7 @@
   <project dest-branch="tina-dev" groups="tina" name="product/tina/tina-ng/prebuilt/riscv" path="prebuilt/rootfsbuilt/riscv" upstream="tina-dev"/>
   <project dest-branch="tina-dev" name="product/tina/tina-ng/target/a523" path="target/a523" upstream="tina-dev"/>
   <project dest-branch="tina-dev" name="product/tina/tina-ng/target/a527" path="target/a527" upstream="tina-dev"/>
-  <project dest-branch="tina-dev" name="product/tina/tina-ng/target/a733" path="target/a733" upstream="tina-dev"/>
+  <project remote="radxa" name="allwinner-target" path="target/a733" revision="target-a733-v1.4.6"/>
   <project dest-branch="tina-dev" name="product/tina/tina-ng/target/common" path="target/common" upstream="tina-dev"/>
   <project dest-branch="tina-dev" name="product/tina/tina-ng/target/t527" path="target/t527" upstream="tina-dev"/>
   <project dest-branch="tina-dev" name="product/tina/tina-ng/target/t736" path="target/t736" upstream="tina-dev"/>
